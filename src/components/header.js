@@ -8,7 +8,9 @@ function Header() {
     <div>
       <div className="bg-darksecondary">
         <div className="d-flex justify-content-between ">
-          <img src={logo} alt="logo" className="logo-size pt-2 pb-2" />
+          <a href="/">
+            <img src={logo} alt="logo" className="logo-size pt-2 pb-2" />
+          </a>
           <div className="blend-mode d-flex align-items-center ">
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className="text-white">

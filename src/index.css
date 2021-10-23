@@ -78,15 +78,15 @@ h6.zar {
   border-color: #03a9f4 !important;
 }
 
-.bg-dark{
-  background: #373E4E !important;
+.bg-dark {
+  background: #373e4e !important;
   border-radius: 20px;
 }
-.align-right{
+.align-right {
   text-align: right;
 }
-.newuser-joined{
-  color:#ED1C24;
+.newuser-joined {
+  color: #ed1c24;
   letter-spacing: 1px;
   font-size: 13px;
   opacity: 0.4;
@@ -94,7 +94,24 @@ h6.zar {
 .input-group {
   border-radius: 20px !important  ;
 }
-.ls-1{
+::placeholder {
+  color: white;
+  /* font-size: 1.5em; */
+}
+.form-control:focus {
+  color: #ffffff !important;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none !important;
+}
+.style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ls-1 {
   letter-spacing: 1px;
   font-size: 12px;
 }
@@ -136,20 +153,51 @@ a:hover {
   color: red !important;
 }
 
-a.nav-link,
-.text-pink {
-  color: #e34e7b !important;
-}
-
 .font-weight-400 {
   font-weight: 400;
 }
 
+.move-right {
+  right: -5%;
+  bottom: 0px;
+}
+.text-pink{
+  color: #FF0C0C !important;
+  opacity: 0.3;
+  font-size: 7px;
+
+}
+ul#page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 0; */
+}
 /* Mobile responsiveness */
 @media (min-width: 576px) {
   .navbar-expand-sm {
     justify-content: space-between !important;
   }
+}
+
+@media (min-width: 360px) {
+ .move-right {
+  right: -1%;
+  bottom: 0px;
+}
+}
+
+@media (min-width: 320px) {
+ .move-right {
+  right: 1%;
+  bottom: 0px;
+}}
+
+@media (min-width: 411px) {
+ .move-right {
+  right: 1%;
+  bottom: 0px;
+}
 }
 
 @media (min-width: 992px) {
@@ -168,7 +216,6 @@ a.nav-link,
   }
 }
 
-
 /* Slider */
 
 .slide {
@@ -180,7 +227,7 @@ a.nav-link,
 }
 .slide::-webkit-scrollbar {
   display: none;
-}	
+}
 
 .slide > .items {
   display: inline-block;
@@ -194,7 +241,7 @@ a.nav-link,
 }
 .slide > .category h6 {
   display: inline-block;
-    width: 95px;
+  width: 95px;
   /* white-space: nowrap;
 
   overflow: hidden;
@@ -202,10 +249,9 @@ a.nav-link,
 }
 
 p.text-right {
-    margin-right: 30px;
-    margin-top: 20px;
-    width: 10px;
-    height: 10px;
-    background: #52EF7C;
-;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 10px;
+  height: 10px;
+  background: #52ef7c;
 }

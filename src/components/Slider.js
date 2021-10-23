@@ -10,24 +10,25 @@ export const Slider = ({ children, className }) => {
 
 export const ActiveSpaceCard = ({ image, name }) => (
   <div className={`category mr-4 mt-1 mb-2 `}>
-    <div
-      className={`card category border-0 `}
-      style={{
-        backgroundImage: `url(${image}) `,
-        backgroundSize: "auto",
-        backgroundRepeat: " no-repeat",
-        height: "140px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "end",
-      }}
-    >
-      <p className="text-right"></p>
+    <a href="/active-space" className="text-decoration-none">
+      {" "}
+      <div
+        className={`card category border-0 `}
+        style={{
+          backgroundImage: `url(${image}) `,
+          backgroundSize: "auto",
+          backgroundRepeat: " no-repeat",
+          height: "140px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "end",
+        }}
+      >
+        <p className="text-right"></p>
 
-      <a href="/active-space">
         <h6 className="m-2 text-white">{name}</h6>
-      </a>
-    </div>
+      </div>{" "}
+    </a>
   </div>
 );
 

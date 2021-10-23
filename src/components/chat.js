@@ -1,7 +1,11 @@
 import React from "react";
 import { FormControl, InputGroup } from "react-bootstrap";
 import avatar1 from "../assets/avatar1.png";
+import avatar2 from "../assets/avatar2.png";
+import avatar3 from "../assets/avatar3.png";
 import image from "../assets/Image.png";
+import cancel from "../assets/cancel.png";
+import arrow from "../assets/arrow.png";
 
 const Chat = () => {
   return (
@@ -15,8 +19,8 @@ const Chat = () => {
         </p>
 
         <div className="row mb-1">
-          <div className="col-3"></div>
-          <div className="col-9 position-relative">
+          <div className="col-2"></div>
+          <div className="col-10 position-relative">
             <div className="bg-dark text-white p-2 ls-1">
               Anybody here loving Lukaku’s form?
             </div>
@@ -24,8 +28,7 @@ const Chat = () => {
               src={avatar1}
               height="24px"
               alt="avatar"
-              className="position-absolute"
-              style={{ right: " 10px", bottom: " 0px" }}
+              className="position-absolute move-right"
             />
           </div>
         </div>
@@ -37,11 +40,10 @@ const Chat = () => {
               He is in terrible form, @halods hope say you bet on top this guy?
             </div>
             <img
-              src={avatar1}
+              src={avatar2}
               height="24px"
               alt="avatar"
-              className="position-absolute"
-              style={{ right: " 10px", bottom: " 0px" }}
+              className="position-absolute move-right"
             />
           </div>
         </div>
@@ -50,6 +52,9 @@ const Chat = () => {
           <div className="col-4"></div>
           <div className="col-8 position-relative align-right ">
             <div className="mb-1">
+              <img src={cancel} height="20px" alt="cancel" /> &nbsp;&nbsp;
+              <img src={arrow} height="22px" alt="arrow" />
+              &nbsp;&nbsp;
               <img src={image} height="70px" alt="footballer" />
             </div>
             <div className="bg-dark text-white align-right p-2 ls-1">
@@ -59,22 +64,21 @@ const Chat = () => {
         </div>
         <p className="newuser-joined mb-1">Folake joined.</p>
         <div className="row mb-1">
-          <div className="col-9 position-relative">
+          <div className="col-10 position-relative">
             <div className="bg-dark text-white p-2 ls-1">
               Hello everybody! I’m Folake.
             </div>
             <img
-              src={avatar1}
+              src={avatar3}
               height="24px"
               alt="avatar"
-              className="position-absolute"
-              style={{ right: " 10px", bottom: " 0px" }}
+              className="position-absolute move-right"
             />
           </div>
-          <div className="col-3"></div>
+          <div className="col-2"></div>
         </div>
       </div>
-      <InputGroup className="mt-3" style={{ background: "#252836" }}>
+      <InputGroup className="mt-3 mb-5" style={{ background: "#252836" }}>
         <InputGroup.Text
           className="border-0"
           style={{ background: "#252836", borderRadius: "20px" }}
@@ -83,7 +87,7 @@ const Chat = () => {
         </InputGroup.Text>
         <FormControl
           className="border-0"
-          aria-label="Amount (to the nearest dollar)"
+          placeholder="Leave a comment"
           style={{ background: "#252836" }}
         />
         <InputGroup.Text
