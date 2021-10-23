@@ -34,8 +34,8 @@ const Chat = () => {
         </div>
 
         <div className="row mb-1">
-          <div className="col-3"></div>
-          <div className="col-9 position-relative">
+          <div className="col-2"></div>
+          <div className="col-10 position-relative">
             <div className="bg-dark text-white p-2 ls-1">
               He is in terrible form, @halods hope say you bet on top this guy?
             </div>
