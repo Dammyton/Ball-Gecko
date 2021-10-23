@@ -75,7 +75,10 @@ const Chat = () => {
         </div>
       </div>
       <InputGroup className="mt-3" style={{ background: "#252836" }}>
-        <InputGroup.Text className="border-0" style={{ background: "#252836" }}>
+        <InputGroup.Text
+          className="border-0"
+          style={{ background: "#252836", borderRadius: "20px" }}
+        >
           <i className="fa fa-smile-o" style={{ color: "#596787" }}></i>
         </InputGroup.Text>
         <FormControl
@@ -83,7 +86,10 @@ const Chat = () => {
           aria-label="Amount (to the nearest dollar)"
           style={{ background: "#252836" }}
         />
-        <InputGroup.Text className="border-0" style={{ background: "#252836" }}>
+        <InputGroup.Text
+          className="border-0"
+          style={{ background: "#252836", borderRadius: "20px" }}
+        >
           <i
             className="fa fa-camera"
             style={{ color: "#596787" }}
